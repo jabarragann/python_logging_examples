@@ -14,3 +14,4 @@ pip install rich pyprojroot
 ## Resources
 
 - [Python tutorials mCoding](https://www.youtube.com/watch?v=9L77QExPmI0)
+- [Python tutorial mCoding repository](https://github.com/mCodingLLC/VideosSampleCode/tree/master/videos/135_modern_logging)
