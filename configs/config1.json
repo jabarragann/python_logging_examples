@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+      "rich_fmt": {
+        "format": "%(message)s",
+        "datefmt": "[%X]"
+      },
+      "file_fmt": {
+        "format": "%(asctime)s | %(levelname)-8s | %(message)s",
+        "datefmt": "[%Y-%m-%d %H:%M:%S]"
+      }
+    },
+    "handlers": {
+      "rich_handler": {
+        "()": "rich.logging.RichHandler",
+        "level": "DEBUG",
+        "rich_tracebacks": true,
+        "formatter": "rich_fmt",
+        "show_time": true,
+        "show_level": true,
+        "show_path": true,
+        "omit_repeated_times": false
+      },
+      "file_handler": {
+        "class": "logging.FileHandler",
+        "level": "DEBUG",
+        "formatter": "file_fmt",
+        "filename": "sample2.log"
+      }
+    },
+    "root": {
+      "level": "DEBUG",
+      "handlers": ["rich_handler", "file_handler"]
+    }
+  }
