@@ -24,6 +24,7 @@
       },
       "file_handler": {
         "class": "logging.FileHandler",
+        "mode": "w", 
         "level": "DEBUG",
         "formatter": "file_fmt",
         "filename": "sample2.log"
